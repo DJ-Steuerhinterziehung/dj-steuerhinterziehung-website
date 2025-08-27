@@ -40,7 +40,10 @@ nav .logo {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* Center the navigation items so they don't drift too far to the right on large screens.  */
+  justify-content: center;
   margin: 0;
 }
 
@@ -76,6 +79,12 @@ nav ul li a:hover {
 
 .lang-switch a:hover {
   color: #e91e63;
+}
+
+/* SoundCloud link styling for better contrast */
+.soundcloud-link a {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* Hero Section */
