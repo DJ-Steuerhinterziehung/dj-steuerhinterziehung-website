@@ -230,6 +230,12 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Bessere Lesbarkeit des Mail‑Links im Kontaktbereich */
+#contact a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 /* Responsives Design */
 @media (max-width: 768px) {
   .hero-content h1 {
