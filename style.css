@@ -65,7 +65,8 @@ nav ul li a:hover {
 .hero {
   height: 100vh;
   /* Das Hero-Bild wird über eine separate Bilddatei eingebunden. */
-  background-image: url('images/hero_new_small.jpg');
+  /* Updated path since hero image now resides in project root */
+  background-image: url('hero_new_small.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
