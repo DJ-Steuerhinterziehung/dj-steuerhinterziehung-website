@@ -70,10 +70,14 @@ nav ul li a:hover {
 }
 
 /* Sprachumschalter in der Navigationsleiste */
-.lang-switch {
-  margin-left: 1rem;
-  font-size: 0.9rem;
-}
+    /* Sprachumschalter als separates Element neben dem Menü */
+    .lang-switch {
+      /* Schiebe den Sprachumschalter ganz nach rechts, damit alle Sprachen
+         sichtbar und klickbar bleiben. */
+      margin-left: auto;
+      font-size: 0.9rem;
+      color: #ffffff;
+    }
 
 .lang-switch a {
   color: #ffffff;
