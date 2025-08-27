@@ -24,8 +24,13 @@ nav {
   width: 100%;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  /* Allow the nav bar to wrap to a second line when there are many items. */
+  flex-wrap: wrap;
+  /* Align items to the left instead of spreading them across the full width so language buttons stay within view. */
+  justify-content: flex-start;
   align-items: center;
+  /* Add some space between the logo and the menu */
+  gap: 2rem;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   z-index: 1000;
@@ -83,6 +88,12 @@ nav ul li a:hover {
 
 /* SoundCloud link styling for better contrast */
 .soundcloud-link a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Resident Advisor link styling for better contrast */
+.ra-link a {
   color: #ffffff;
   text-decoration: underline;
 }
@@ -273,4 +284,15 @@ footer {
   section {
     padding: 5rem 1.5rem 3rem;
   }
+}
+
+/* FAQ section styles */
+.faq dt {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.faq dd {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
 }
