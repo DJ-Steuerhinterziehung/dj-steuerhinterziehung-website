@@ -23,7 +23,7 @@
   </main>
   <script>
     const release = Date.now().toString(36);
-    const files = Array.from({length:20},(_,i)=>`payload-${String(i).padStart(2,"0")}.dat`);
+    const files = Array.from({length:24},(_,i)=>`payload-${String(i).padStart(2,"0")}.dat`);
     Promise.all(files.map(async file=>{
       const response = await fetch(`${file}?v=${release}`,{cache:"no-store"});
       if(!response.ok) throw new Error(`HTTP ${response.status}`);
